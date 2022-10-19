@@ -1,7 +1,4 @@
 .env
 *.pyc
-/bin/internal/__pycache__/
-/bin/internal/__pycache__/*
-bin/.DS_Store
-bin/internal/.DS_Store
+*.DS_Store
 .idea/
