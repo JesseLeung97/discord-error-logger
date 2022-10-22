@@ -16,7 +16,7 @@ class ERRORS(str, Enum):
     NO_CHANNEL = "The given channel ID did not match a channel in this server."
 
 
-def throw_error(error_code):
+def _throw_error(error_code):
     print(f"{BCOLORS.FAIL}{error_code}{BCOLORS.ENDC}")
     raise SystemExit(1)
 
