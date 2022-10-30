@@ -2,7 +2,7 @@ from os import getenv
 
 from dotenv import find_dotenv, load_dotenv
 
-from discord_logger.constants.environment_variables import ENV
+from src.discord_logger.constants.environment_variables import ENV
 
 
 class Config:

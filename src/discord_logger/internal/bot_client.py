@@ -19,8 +19,17 @@ class BotClient:
         url = (
             f"https://discord.com/api/v9/channels/{self.config.log_channel_id}/messages"
         )
-        headers = {"authorization": self.config.bot_token}
-        data = {"content": message, "nonce": f"{_gen_random_nonce()}", "tts": "false"}
+
+        headers = {
+            "authorization": self.config.bot_token
+        }
+
+        data = {
+            "content": message,
+            "nonce": f"{_gen_random_nonce()}",
+            "tts": "false"
+        }
+
         response = requests.post(url=url, headers=headers, data=data)
         if response.status_code != GlobalConstants.HTTP_RESPONSE_OK:
             err = json.dumps(response.json(), indent=4)
