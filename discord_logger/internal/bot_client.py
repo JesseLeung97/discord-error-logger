@@ -44,3 +44,8 @@ class BotClient:
 
     def send_plain_message(self, message: str):
         self._send_message(message)
+
+
+def create_bot_client() -> BotClient:
+    _config = Config()
+    return BotClient(_config)
