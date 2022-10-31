@@ -1,4 +1,4 @@
-from src.discord_logger.internal.internal_api_receiver import (
+from discord_logger.internal.internal_api_receiver import (
     log_error_handler, plain_message_handler)
 
 

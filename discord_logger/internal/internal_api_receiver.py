@@ -1,4 +1,4 @@
-from src.discord_logger import BotClient
+from discord_logger import BotClient
 
 
 def log_error_handler(error_message: str, stack_trace: str=None):

@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["JesseLeung97", "AgentKD6-37"]
 readme = "README.md"
-packages = [{include = "discord_logger", from = "src"}]
+packages = [{include = "discord_logger"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"

@@ -3,8 +3,8 @@ import random
 
 import requests
 
-from src.discord_logger.constants.global_constants import GlobalConstants
-from src.discord_logger.internal.config import Config
+from discord_logger.constants.global_constants import GlobalConstants
+from discord_logger.internal.config import Config
 
 
 def _gen_random_nonce():
