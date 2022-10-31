@@ -2,9 +2,9 @@
 name = "discord-error-logger"
 version = "0.1.0"
 description = ""
-authors = ["JesseLeung97"]
+authors = ["JesseLeung97", "AgentKD6-37"]
 readme = "README.md"
-packages = [{include = "discord_error_logger"}]
+packages = [{include = "discord_error_logger", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
