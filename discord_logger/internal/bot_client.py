@@ -16,7 +16,7 @@ class BotClient:
         self.config = config
 
     def _send_message(self, message: str):
-        message = f"**[{self.config.parent_module_name}]**\n \n{message} :ktf:"
+        message = f"**[{self.config.parent_module_name}]**\n \n{message}"
 
         url = (
             f"https://discord.com/api/v9/channels/{self.config.log_channel_id}/messages"
@@ -42,7 +42,7 @@ class BotClient:
 
     def send_error_message(self, error_message: str, stack_trace: str = None):
         if stack_trace:
-            error_message = f"{error_message}\n```\n{stack_trace}\n```"
+            error_message = f"{error_message} <:ktf:757059572807630848>\n```\n{stack_trace}\n```"
         self._send_message(error_message)
 
     def send_plain_message(self, message: str):
