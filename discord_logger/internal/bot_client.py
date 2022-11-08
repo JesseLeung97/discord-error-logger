@@ -33,6 +33,7 @@ class BotClient:
         }
 
         response = requests.post(url=url, headers=headers, data=data)
+
         if response.status_code != GlobalConstants.HTTP_RESPONSE_OK:
             err = json.dumps(response.json(), indent=4)
             raise Exception(
