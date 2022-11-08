@@ -41,7 +41,7 @@ class BotClient:
 
     def send_error_message(self, error_message: str, stack_trace: str = None):
         if stack_trace:
-            error_message = f"{error_message}\n```\n{json.dumps(stack_trace)}\n```"
+            error_message = f"{error_message}\n```\n{stack_trace}\n```"
         self._send_message(error_message)
 
     def send_plain_message(self, message: str):
