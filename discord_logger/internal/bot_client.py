@@ -16,7 +16,7 @@ class BotClient:
         self.config = config
 
     def _send_message(self, message: str):
-        message = f"**[{self.config.parent_module_name}]**\n \n{message}"
+        message = f"**[{self.config.parent_module_name}]**\n \n{message} :ktf:"
 
         url = (
             f"https://discord.com/api/v9/channels/{self.config.log_channel_id}/messages"
